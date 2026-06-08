@@ -1,0 +1,141 @@
+header {
+    position: relative;
+    height: 700px;
+    width: 100%;
+
+    .image {
+        position: absolute;
+        z-index: -2;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .content {
+        position: relative;
+        z-index: 1;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        /*TODO: сделать правильный отступ*/
+        padding: 26px 0 0 0;
+        margin: 0 auto;
+        overflow: visible;
+
+        @media screen and (max-width: 767px) {}
+
+        @media screen and (min-width: 768px) and (max-width: 1365px) {
+            width: calc(100% - 40px);
+            /*TODO: поправить взять из мобилки*/
+            margin: 0 20px;
+        }
+
+        @media screen and (min-width: 1366px) {
+            width: 1222px;
+        }
+
+        .logo {
+            width: 245.17px;
+            height: 36px;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: fill;
+            }
+        }
+
+        .wrapper-text {
+            display: flex;
+            flex-direction: column;
+            width: 542px;
+            margin-top: 62px;
+
+            h1 {
+                text-transform: uppercase;
+                color: #313131;
+
+                &:nth-child(2) {
+                    align-self: center;
+                }
+
+                &:nth-child(3) {
+                    align-self: flex-end;
+                }
+            }
+
+            &>p {
+                color: #313131;
+                text-align: center;
+                margin-top: 24px;
+            }
+
+            .wrapper-buttons {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                margin-top: 40px;
+
+                button {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+                    width: 263px;
+                    height: 72px;
+                    border-radius: 66px;
+                    padding-left: 49px;
+                    padding-right: 49px;
+
+                    &.black {
+                        border: none;
+                        background-color: #1f1f1f;
+                        color: #fff;
+
+                        &:hover {
+                            background-color: #fbce51;
+                            color: #1f1f1f;
+
+                        }
+                    }
+
+                    &.default {
+                        background-color: inherit;
+                        color: #1f1f1f;
+                        border: #1f1f1f 1px solid;
+
+                        &:hover {
+                            background-color: #1f1f1f;
+                            color: #fff;
+                        }
+                    }
+                }
+
+            }
+        }
+
+        .image {
+            z-index: -1;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            height: 100%;
+            width: 100%;
+
+            /*TODO: подвинуть*/
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                overflow: visible;
+            }
+        }
+    }
+}

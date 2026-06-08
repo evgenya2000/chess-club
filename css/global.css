@@ -1,0 +1,47 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    scrollbar-width: none;
+    overflow-x: hidden;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+
+    & * {
+        z-index: 1;
+    }
+}
+
+main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+section {
+    margin: 0 auto;
+
+    @media screen and (max-width: 767px) {
+
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1365px) {
+        width: calc(100% - 40px);
+        /*TODO: поправить взять из мобилки*/
+        margin: 0 20px;
+    }
+
+    @media screen and (min-width: 1366px) {
+        width: 1222px;
+    }
+}
+
+h2 {
+    text-transform: uppercase;
+}

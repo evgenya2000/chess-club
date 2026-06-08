@@ -1,0 +1,23 @@
+footer {
+    height: 150px;
+    width: 100%;
+    background-color: #E9DED4;
+    color: #313131;
+    display: flex;
+    padding-top: 40px;
+    justify-content: center;
+
+    p {
+        @media screen and (max-width: 767px) {}
+
+        @media screen and (min-width: 768px) and (max-width: 1365px) {
+            width: calc(100% - 40px);
+            /*TODO: поправить взять из мобилки*/
+            margin: 0 20px;
+        }
+
+        @media screen and (min-width: 1366px) {
+            width: 1222px;
+        }
+    }
+}

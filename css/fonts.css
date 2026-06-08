@@ -1,0 +1,71 @@
+.merriweather-marquee {
+  font-family: "Merriweather", serif;
+  font-size: 22px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 110%;
+}
+
+.merriweather-h2 {
+  font-family: "Merriweather", serif;
+  font-size: 36px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 135%;
+}
+
+.merriweather-h2-2 {
+  font-family: "Merriweather", serif;
+  font-size: 54px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 120%;
+}
+
+.merriweather-h1 {
+  font-family: "Merriweather", serif;
+  font-size: 60px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 110%;
+}
+
+.golos-text-footer {
+  font-family: "Golos Text", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 120%;
+}
+
+.golos-text-p3 {
+  font-family: "Golos Text", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  font-style: normal;
+  line-height: 130%;
+}
+
+.golos-text-p2 {
+  font-family: "Golos Text", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 130%;
+}
+
+.golos-text-p {
+  font-family: "Golos Text", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 120%;
+}
+
+.golos-text-p-4 {
+  font-family: "Golos Text", sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  font-style: normal;
+  line-height: 120%;
+}
